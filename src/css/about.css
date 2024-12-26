@@ -1,5 +1,14 @@
+
+html,body{
+    background-color: #2C4B76;  
+    height: 100%;
+    margin: 0;
+    
+}
+
 header .top-area{
     height: 100px;
+    margin-bottom: 50px;
 }
 
 .nav-bar{
@@ -34,4 +43,86 @@ header .top-area{
 }
 .toggle-button{
     display: none;
+    color: #ffff;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.container{
+display: flex;        
+color: white;
+padding: 20px 10px;
+margin: 2rem auto;
+height: 100%;
+
+}
+
+.left {
+flex: 1;
+font-size: 2rem;
+}
+
+.right {
+flex: 2;
+
+}
+
+.section {
+border-bottom: 1px solid white;
+padding: 10px 0;
+}
+
+.section-title {
+font-size: 1.5rem;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.section-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease-out;
+padding-left: 10px;
+}
+
+.section-content p {
+margin: 10px 0;
+padding: 0;
+}
+
+.dropdown {
+transform: rotate(90deg);
+transition: transform 0.3s ease-out;
+
+}
+
+.dropdown.active {
+transform: rotate(0deg);
+}
+
+
+footer{
+    height: 80px;
+    background-color:#6aa8ff ;
+    text-align: center;
+}
+footer .footer_header h5{
+    font-family: serif;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-weight: 700;
+    color: #E5F0FF;
+}
+footer .social_media {
+    display: flex;
+    justify-content:center;
+    gap: 3rem;
+}
+footer .social_media i{
+    font-size: 30px;
 }
