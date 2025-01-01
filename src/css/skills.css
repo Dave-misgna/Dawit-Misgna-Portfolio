@@ -86,7 +86,7 @@ header .top-area{
     padding: 8px 20px;
 }
 
-@media screen and (max-width: 852px ){
+@media screen and (max-width: 915px ){
     
     .pages-links{
         display: none;
@@ -132,3 +132,22 @@ header .top-area{
     
 
 }
+
+@media screen and (max-width: 415px ){
+    .skill{
+        width: 300px;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .skill1{
+        flex-direction: column-reverse;
+    }
+    .skill1 .skill_image1{
+        padding: 20px 5px;
+    }
+    .skill2 .skill_image2{
+        padding: 20px 5px;
+    }
+}
+    

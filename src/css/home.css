@@ -90,11 +90,11 @@ header .top-area{
     .pages-links ul{
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 70px;
         justify-content: center;
         align-items: center;
         background-color: #A8C8F0;
-        width: 100%;
+        width: 90%;
         text-align: center;
         
     }

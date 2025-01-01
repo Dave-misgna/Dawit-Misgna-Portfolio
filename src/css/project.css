@@ -52,8 +52,7 @@ header .top-area{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 100%;
-    
+    width: 100%;  
 }
 .container .boxes{
     text-align: center;
@@ -62,12 +61,17 @@ header .top-area{
     margin: 20px 20px;
     padding: 10px 20px;
     background-color: #E5F0FF;
-    
-    
 }
+
 .boxes video{
    max-width: 160px;
    height: 130px;
+}
+.boxes .title p{
+    font-size: 15px;
+    font-weight:400;
+    text-align: center;
+    
 }
 .boxes .title a {
     text-decoration: none;
@@ -92,7 +96,6 @@ header .top-area{
         top: 0;
         gap: 2rem;
         
-             
     }
    
     .pages-links ul{
