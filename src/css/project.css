@@ -48,16 +48,16 @@ header .top-area{
     font-size: larger;
 }
 .container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
-    justify-items: center;
-   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
     
 }
 .container .boxes{
     text-align: center;
-    width: 250px;
+    width: 160px;
     border: 1px solid black;
     margin: 20px 20px;
     padding: 10px 20px;
@@ -66,8 +66,8 @@ header .top-area{
     
 }
 .boxes video{
-   max-width: 250px;
-   height: auto;
+   max-width: 160px;
+   height: 130px;
 }
 .boxes .title a {
     text-decoration: none;
@@ -78,4 +78,47 @@ header .top-area{
     padding: 5px 20px;
     cursor: pointer
     
+}
+
+
+@media screen and (max-width: 852px ){
+    
+    .pages-links{
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 0;
+        gap: 2rem;
+        
+             
+    }
+   
+    .pages-links ul{
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: #A8C8F0;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+    .pages-links ul li a{
+        color: #003C96;
+    }
+    .toggle-button{
+        display: block;
+        color: #E5F0FF;
+        font-size: 3rem;
+        font-weight: 3px;
+        cursor: pointer;    
+        
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+    }
 }
