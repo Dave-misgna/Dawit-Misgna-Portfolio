@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url(/src/images/home-page-background-image.png);
+    background-image: url(./images/home-page-background-image.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
