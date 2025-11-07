@@ -31,6 +31,4 @@ This website showcases my projects, skills, and experiences as a developer, prov
 
 ---
 
-🔗 **Live Website:** [https://dave-misgna.github.io/Dawit-Misgna-Portfolio](https://dave-misgna.github.io/Dawit-Misgna-Portfolio)
-
 
