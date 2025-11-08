@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dawit's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
     <!-- header -->
@@ -13,15 +13,16 @@
         <div class="top-area">
             <nav class="nav-bar">
                 <div class="nav-header">
-                    <h1><a href="#">Dawit</a></h1>
+                    <h1><a href="#home">Dawit</a></h1>
                 </div>
                 
                 <div class="pages-links">
                     <ul>
-                        <li><a href="./src/about.html">About</a></li>
-                        <li><a href="./src/projects.html">Projects</a></li>
-                        <li><a href="./src/skills.html">Skills</a></li>
-                        <li><a href="./src/contact.html">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <label class="toggle-button">
@@ -31,8 +32,7 @@
         </div>
     </header>
 
-    
-     <!-- main content -->
+    <!-- Home Section -->
     <section class="description" id="home">
         <div class="description-content">
             <h2>Hi<span>,</span> I am <br>
@@ -40,8 +40,192 @@
             <h4>Web Developer and Programmer</h4>
         </div>
     </section>
-    <script src="./src/javascript/home.js"></script>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="left">
+                <h1>My Resume</h1>
+            </div>
+            <div class="right">
+                <div class="section">
+                    <div class="section-title" onclick="toggleSection(this)">
+                        <span>Education</span>
+                        <span class="dropdown">&#9654;</span>
+                    </div>
+                    <div class="section-content">
+                        <p>I'm Software Engineering Student at Addis Ababa University</p>
+                        <p>Certified in cybersecurity threat analysis by Cisco</p>
+                        <p>Certified in fundamental of programming by Udacity</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title" onclick="toggleSection(this)">
+                        <span>My Passion</span>
+                        <span class="dropdown">&#9654;</span>
+                    </div>
+                    <div class="section-content">
+                        <p>I'm a passionate programmer and cybersecurity analyst driven by a deep curiosity and a relentless desire to understand
+                        the intricate workings of technology. <br>
+                        Programming isn't just a skill for me it's a form of creative expression that
+                        allows me to bring ideas to life and solve complex problems with elegant solutions.</p>   
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title" onclick="toggleSection(this)">
+                        <span>Motivations</span>
+                        <span class="dropdown">&#9654;</span>
+                    </div>
+                    <div class="section-content">
+                        <p>Kobie Bryan Quote</p>
+                        <audio controls src="./src/Audio/Kobie motivation.mp3"></audio>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title" onclick="toggleSection(this)">
+                        <span>Future Aspirations</span>
+                        <span class="dropdown">&#9654;</span>
+                    </div>
+                    <div class="section-content">
+                        <p>Beyond personal advancement, I am passionate about making a broader impact on the tech community. This involves actively
+                        engaging in mentorship programs, sharing knowledge with aspiring professionals, and advocating for diversity and
+                        inclusivity within the industry. I see community involvement as a crucial aspect of my journey, as it not only enriches
+                        my own growth but also empowers others to thrive in the tech sector.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="pageDescription">
+            <h2>Projects</h2>
+        </div>
+        <div class="container">
+            <div class="boxes">
+                <div class="video">
+                    <video controls src="./src/video/Dice_Game.webm"></video>
+                </div>
+                <div class="title">
+                    <h3>Dice Game</h3>
+                    <p>It is a compitive dice game played by two players with the goal of scoring points by rolling a higher
+                        number than their opponent. The player who wins a round earns one
+                        point, and the first to reach 10 points is declared the Winner</p>
+                    <a href="https://github.com/Dave-misgna/Dice-game.git" class="link-button">github</a>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <div class="video">
+                    <video controls src="./src/video/Drum_Practice.webm"></video>
+                </div>
+                <div class="title">
+                    <h3>Drum-Kit</h3>
+                    <p>It have a wide variety of virtual drums, each equipped with high-quality audio samples. 
+                        Simply click on the drums to generate 
+                        authentic sounds, allowing you to create unique rhythms and practice at your own pace.
+                        which will increase your drumming skills</p>
+                    <a href="https://github.com/Dave-misgna/Drum-Kit.git" class="link-button">github</a>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <div class="video">
+                    <video controls src="./src/video/E-Commerce_sample.webm"></video>
+                </div>
+                <div class="title">
+                    <h3>E-Commerce</h3>
+                    <p>It is a shopping website where Each item is presented with captivating images, detailed descriptions, and pricing information. When you find something
+                    you love, simply click the "Add to Cart" button to include it in your shopping cart</p>
+                    <a href="https://github.com/Dave-misgna/E-commerce-sample.git" class="link-button">github</a>
+                </div>
+            </div>
+
+            <!-- <div class="boxes">
+                <div class="video">
+                    <video controls src="./src/video/sign-up_form.webm"></video>
+                </div>
+                <div class="title">
+                    <h3>Login form</h3>
+                    <p>If you are new here, simply fill out the sign-up form with your information to get started.
+                        If you already have an account, just click the "Already have an account?" link, and you'll be directed to the sign-in
+                    option where you can enter your credentials.</p>
+                    <a href="https://github.com/Dave-misgna/Login-Form.git" class="link-button">github</a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="skill skill1">
+                <div class="describe">
+                    <h3>Designing and Developing Websites</h3>
+                    <p>I have experience in designing and developing websites that prioritize both functionality and aesthetics. From building
+                    responsive layouts to incorporating user-friendly features, I am capable of creating web solutions that meet diverse
+                    needs</p>
+                </div>
+                <div class="skill_image1">
+                    <img src="./src/images/skill_image1.jpg" alt="img" >
+                </div>
+            </div>
+
+            <div class="skill skill2">
+                <div class="skill_image2">
+                    <img src="./src/images/skill_image2.jpg" alt="img" >
+                </div>
+                <div class="describe">
+                    <h3>Programming</h3>
+                    <p>My programming experience spans languages such as Java, Python, and Dart, where I have worked on a variety of
+                    small-scale projects and tasks. I am capable of writing functional code, solving problems, and contributing to projects
+                    that involve these languages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-page">
+            <div class="container">
+                <div class="contact-header">
+                    <h3> Contact</h3>
+                    <p>Thank you for visiting my portfolio! If you have any questions, opportunities, or simply want to say hello, feel free to
+                    reach out. I'm always open to discussing exciting projects, collaborations, or new ideas. Whether it's professional work
+                    or a creative venture, I'd love to hear from you. You can <strong>contact me</strong> using the form below or
+                    social media links. <em>Let's work together to create something amazing!</em> </p>
+                </div>
+                <div class="social-icon">
+                    <a href="https://github.com/Dave-misgna"><i class="fab fa-github" style="color: rgb(14, 13, 13);"></i></a>
+                    <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dawit-misgna-aa3ab825a/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="contacts">
+                    <form>
+                        <div class="col-1 contactgrid">
+                            <input type="text" class="text" placeholder="name">
+                        </div>
+                        <div class="col-2 contactgrid">
+                            <input type="text" class="text" placeholder="email">
+                        </div>
+                        <div class="col-3 contactgrid">
+                            <input type="text" class="text" placeholder="Phone number">
+                        </div>
+                        <div class="col-4 contactgrid1">
+                            <textarea id="text-area">your message</textarea>
+                        </div>
+                        <div class="col-5 contactgrid2">
+                            <input type="submit" value="send message">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/javascript/main.js"></script>
 </body>
 </html>
-                
-            

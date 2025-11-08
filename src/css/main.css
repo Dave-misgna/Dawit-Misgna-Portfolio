@@ -1,0 +1,626 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2C4B76;
+    background-image: url(../images/home-page-background-image.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+header .top-area{
+    height: 100px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.nav-bar .nav-header h1{
+    margin: 0;
+    font-weight: bolder;
+    padding: 15px 25px;
+    font-size: xx-large;
+}
+
+.nav-header h1 a{
+   text-decoration: none;
+   color: #B8D5FF;
+}
+
+.pages-links ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.pages-links ul li a{
+    text-decoration: none;
+    font-size:large;
+    font-weight: 600;
+    color: #E5F0FF;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.pages-links ul li a:hover{
+    color: #B8D5FF;
+}
+
+.toggle-button{
+    display: none;
+    color: #E5F0FF;
+    cursor: pointer;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.description-content{
+    width: 400px;
+    padding-left: 50px;
+}
+
+.description-content h2{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight:bold;
+    font-family:  Roboto, Serif;
+    margin-bottom: 0;
+}
+
+.description-content h4{
+    color: #fff;
+    font-weight: 500;
+    font-family:  Roboto, Serif;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 50px 80px;
+}
+
+.about-section .container{
+    display: flex;        
+    color: #fff;
+    padding: 20px 10px;
+    margin: 2rem auto;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.about-section .left {
+    flex: 1;
+    font-size: 2rem;
+}
+
+.about-section .right {
+    flex: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section .section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+    margin: 0;
+}
+
+.about-section .section-title {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-section .section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-left: 10px;
+}
+
+.about-section .section-content p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.about-section .dropdown {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-out;
+}
+
+.about-section .dropdown.active {
+    transform: rotate(0deg);
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 50px 80px;
+}
+
+.pageDescription{
+    text-align:center;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: larger;
+    margin-bottom: 50px;
+}
+
+.projects-section .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-section .boxes{
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #E5F0FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects-section .boxes video{
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+.projects-section .boxes .title p{
+    font-size: 15px;
+    font-weight:400;
+    text-align: center;
+}
+
+.projects-section .boxes .title a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2d63c8;
+    font-size: 19px;
+    border: 1px solid #2d63c8;
+    padding: 5px 20px;
+    cursor: pointer
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 50px 80px;
+}
+
+.skills-section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-section .skill {
+    background-color: #fff;
+    margin: 30px 0;
+    width: 80vw;
+    max-width: 1000px;
+}
+
+.skills-section .skill img{
+    width: 200px;
+    height: 80px;
+}
+
+.skills-section .skill1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.skills-section .skill1 .skill_image1{
+    padding: 20px 20px;
+    width: 300px;
+}
+
+.skills-section .skill1 .describe{
+    padding: 10px 20px;
+}
+
+.skills-section .skill2{
+    display: flex;
+    justify-content: center;
+}
+
+.skills-section .skill2 .skill_image2{
+    padding: 20px 20px;
+    width: 300px;
+}
+
+.skills-section .skill2 .describe{
+    padding: 8px 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 50px 80px;
+}
+
+.contact-page{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact-section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact-section .contact-header h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size:xx-large;
+    color: #fff;
+}
+
+.contact-section .contact-header{ 
+    color: #fff;
+    font-family: serif;  
+    padding: 0 10rem;
+}
+
+.contact-section .social-icon{
+    text-align: center;
+    font-size: 30px;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contact-section .social-icon i{
+    color: #E5F0FF;
+}
+
+.contact-section .contacts {
+    box-sizing: border-box;
+    background-color: #E5F0FF;
+    margin: 0 15rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact-section .contacts form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    width: 700px;
+    box-sizing: border-box;
+}
+
+.contact-section .contacts .contactgrid {
+    grid-column: span 1; 
+    padding: 10px;
+}
+
+.contact-section .contacts .contactgrid input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-section .contacts .contactgrid1 {
+    grid-column: span 2; 
+    padding: 10px;
+}
+
+.contact-section .contacts .contactgrid2 {
+    grid-column: span 1; 
+    align-self: center; 
+    text-align: center; 
+}
+
+.contact-section textarea {
+    width: 100%;
+    height: 100%; 
+    resize: none; 
+}
+
+.contact-section .contacts .contactgrid2 input[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-section .contacts .contactgrid2 input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer{
+    height: 80px;
+    background-color: #6aa8ff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer .footer_header h5{
+    font-family: serif;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-weight: 700;
+    color: #E5F0FF;
+}
+
+footer .social_media {
+    display: flex;
+    justify-content:center;
+    gap: 3rem;
+    margin-top: 10px;
+}
+
+footer .social_media i{
+    font-size: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 852px ){
+    .pages-links{
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 0;
+        gap: 2rem;
+    }
+   
+    .pages-links ul{
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: #A8C8F0;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .pages-links ul li a{
+        color: #003C96;
+    }
+    
+    .toggle-button{
+        display: block;
+        color: #E5F0FF;
+        font-size: 3rem;
+        font-weight: 3px;
+        cursor: pointer;    
+    }
+    
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-section,
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        margin: 50px 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+
+    .about-section .container{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 98%;
+    }
+    
+    .about-section .left{
+        font-size: 1.3rem;
+    }
+    
+    .about-section .right{
+        width: 100px;
+        margin-right: 5px;
+    }
+
+    .skills-section .skill2{
+        flex-direction: row-reverse;
+    }
+
+    .contact-section .contact-header{
+        padding: 10px;
+    }
+
+    .projects-section .container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 393px){
+    .about-section,
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        margin: 50px 10px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+
+    .about-section .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-section .right{
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .projects-section .container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 415px ){
+    .skills-section .skill{
+        width: 300px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills-section .skill1{
+        flex-direction: column-reverse;
+    }
+    
+    .skills-section .skill1 .skill_image1{
+        padding: 20px 5px;
+    }
+    
+    .skills-section .skill2 .skill_image2{
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 1194px ){
+    .contact-section .contacts form{
+        grid-template-columns: 2fr 1fr; 
+        box-sizing: border-box;
+    }
+    
+    .contact-section .contacts .contactgrid{
+        width: 100%;
+        padding-right: 5px;
+    }
+    
+    .contact-section .contacts .contactgrid1{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .contact-section .contacts .contactgrid2{
+        width: 50%;
+        padding-left: 12rem;
+    }
+}
+
+
+@media screen and (max-width: 700px ){
+    .contact-section .contacts form {
+        display: block;
+        width: 80vw;
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    .contact-section .contact-header{
+        padding: 10px;
+    }
+    
+    .contact-section .contacts .contactgrid2{
+        width: 50%;
+        padding-left: 100px;
+        display: flex;
+    }
+    
+    .contact-section .contacts .contactgrid1{
+        height: 50px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
